@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
+
+<body>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Criar loja grátis</h5>
+                <button type="button" class="btn-close" aria-label="Close" onclick="fecharModal()"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="storeName" class="form-label">Nome da sua marca (Você poderá alterá-lo mais
+                            tarde)</label>
+                        <input type="text" class="form-control" id="storeName" name="storeName"
+                            placeholder="Exemplo: Loja DropForge" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Digite seu E-mail:</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Nome@exemplo.com.br" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Digite sua Senha:</label>
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Defina sua senha" required>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label class="form-check-label" for="terms">
+                            Aceito os <a href="#" class="termo">termos e Condições</a> e a <a href="#" class="termo">Política de Privacidade</a>
+                            DropForge
+                        </label>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Criar Loja</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
